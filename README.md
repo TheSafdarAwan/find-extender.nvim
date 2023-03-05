@@ -1,14 +1,15 @@
 ## Description
 
-This Plugin extend's the capability of find, till and text manipulation(yank/delete/change)
-command's in nvim. With the help of this Plugin you can find multiple characters rather than
-one at a time.
+This Plugin **extends** the capability of find, till and y/d/c command's in nvim.
+By Default **neovim** only accepts one character when finding for pattern. This
+plugin give's you more power over how the finding commands and d/c/y commands
+behave and how many characters they can accepts as input.
 
 🔥 This Plugins Effects the following commands:
 
     f|F (find commands)
     t|T (till commands)
-    ;|, (last pattern commands)
+    ;|, (repeat last pattern commands)
     c{t|T|f|f} (change command)
     d{t|T|f|f} (delete command)
     y{t|T|f|f} (yank command)
@@ -19,17 +20,24 @@ go to next position.
 
 ## ✨ Features
 
-- adds capability to add more characters to finding command's.
-- yank/delete/change(y/d/c) text same as finding.
-- Highlight the yanked area(see :h vim.highlight.range()).
-- timeout to find pattern before the `chars_length` variable lenght has completed.
-- provide number like `2` before key to go to second position for the pattern.
-  This is universal for y/d/c or t/T/f/F commands.
+- **pattern limit**: adds capability to accept more characters for finding command's pattern.
+- **y/d/c**: yank/delete/change(y/d/c) text with same capability as the finding commands.
+- **timeout**: You can enable timeout to find the pattern before your character
+  specified limit has completed. Even if you only gave _1_ character as an input.
+  You can control that as well.
+- **count**: accepts count before finding key or after in case of y/d/c keys.
+- **UI Related**: Highlight the yanked area using `highlight.range`(see :h vim.highlight.range()).
 
 ## 🚀 Usage
 
-I have only provided demos for find and delete commands y,c,t,y commands take characters
-input same as these.
+<!-- #### count -->
+ <!-- TODO: add gif demo and then explanation. -->
+
+<!-- ### yank/change/delete -->
+<!--  TODO: add more gif demos using count and subject related demos -->
+<!-- #### yank -->
+<!-- #### change -->
+<!-- #### delete -->
 
 #### find forward
 
