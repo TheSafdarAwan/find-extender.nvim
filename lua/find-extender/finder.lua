@@ -210,7 +210,10 @@ function M.finder(config)
 			end
 		elseif keys_tbl[c] then
 			finder(key .. c)
-		elseif c then
+		else
+			if not c then
+				return
+			end
 			not_text_manipulation_key(c, skip_nodes)
 		end
 	end
