@@ -31,7 +31,7 @@ go to next position.
 ## 🚀 Usage
 
 <!-- #### count -->
- <!-- TODO: add gif demo and then explanation. -->
+<!-- TODO: add gif demo and then explanation. -->
 
 <!-- ### yank/change/delete -->
 <!--  TODO: add more gif demos using count and subject related demos -->
